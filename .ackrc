@@ -1,0 +1,3 @@
+--smart-case
+--ignore-dir=log
+--pager="less -R"
