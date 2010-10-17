@@ -1,4 +1,5 @@
 " Required setup for pathogen.vim
+filetype on  " vim does not like `filetype off` if it isn't on
 filetype off " force reload just in case (for pathogen.vim)
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
