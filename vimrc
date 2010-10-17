@@ -1,5 +1,6 @@
 " Required setup for pathogen.vim
-filetype plugin indent off " force reload just in case (for pathogen.vim)
+filetype off " force reload just in case (for pathogen.vim)
+call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
 
 " General
