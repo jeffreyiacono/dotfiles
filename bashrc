@@ -7,4 +7,4 @@ export NODE_PATH="/usr/local/lib/node"
 alias ll="ls -l"
 alias git=hub
 
-if [[ -s /Users/paul/.rvm/scripts/rvm ]] ; then source /Users/paul/.rvm/scripts/rvm ; fi
+if [[ -s ~/.rvm/scripts/rvm ]] ; then source ~/.rvm/scripts/rvm ; fi
