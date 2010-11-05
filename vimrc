@@ -16,6 +16,14 @@ set isk+=_,$,@,%,#,-                  " non word dividers
 set enc=utf-8
 
 " ----------------------------------------------------------------------------
+"  Platform detection
+" ----------------------------------------------------------------------------
+
+let s:platform = system("uname")
+let s:on_linux = s:platform =~? "linux"
+let s:on_mac   = has('macunix') || s:platform =~? "Darwin"
+
+" ----------------------------------------------------------------------------
 "  Folding
 " ----------------------------------------------------------------------------
 set nofoldenable
@@ -127,8 +135,10 @@ map <D-S-9> 9gt
 map <D-S-0> :tablast<CR>
 
 " Split-screen navigation
-map <C-J> <C-W>j<C-W>_
-map <C-K> <C-W>k<C-W>_
+map <C-J> <C-W>j
+map <C-K> <C-W>k
+map <C-H> <C-W>h
+map <C-L> <C-W>l
 set wmh=0 " Allow splits to be zero-height
 
 " , is easier to reach than backspace
@@ -141,6 +151,18 @@ let mapleader=","
 " Automatically reload .vimrc after save
 autocmd BufWritePost .vimrc source $MYVIMRC
 nmap <leader>v :tabedit $MYVIMRC<CR>
+
+" ----------------------------------------------------------------------------
+"  Gist
+" ----------------------------------------------------------------------------
+
+let g:gist_detect_filetype = 1
+
+if s:on_mac
+  let g:gist_clip_command = 'pbcopy'
+elseif s:on_linux
+  let g:gist_clip_command = 'xclip -selection clipboard'
+endif
 
 " ----------------------------------------------------------------------------
 "  Relative :edit shortcuts
