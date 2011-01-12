@@ -1,3 +1,7 @@
 --smart-case
 --ignore-dir=log
 --pager=less -R
+--type-add
+html=.haml
+--type-add
+css=.sass,.scss
