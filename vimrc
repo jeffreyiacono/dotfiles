@@ -156,7 +156,7 @@ let mapleader=","
 " ----------------------------------------------------------------------------
 
 " Automatically reload .vimrc after save
-autocmd BufWritePost .vimrc source $MYVIMRC
+autocmd! BufWritePost .vimrc source %
 nmap <leader>v :tabedit $MYVIMRC<CR>
 
 " ----------------------------------------------------------------------------
