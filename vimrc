@@ -39,9 +39,22 @@ autocmd InsertEnter * if !exists('w:last_fdm') | let w:last_fdm=&foldmethod | se
 autocmd InsertLeave,WinLeave * if exists('w:last_fdm') | let &l:foldmethod=w:last_fdm | unlet w:last_fdm | endif
 
 " ----------------------------------------------------------------------------
+"  Tabularize
+" ----------------------------------------------------------------------------
+
+if exists(":Tabularize")
+  nmap <Leader>a=> :Tabularize /=><CR>
+  vmap <Leader>a=> :Tabularize /=><CR>
+  nmap <Leader>a= :Tabularize /=<CR>
+  vmap <Leader>a= :Tabularize /=<CR>
+  nmap <Leader>a: :Tabularize /:\zs<CR>
+  vmap <Leader>a: :Tabularize /:\zs<CR>
+endif
+
+" ----------------------------------------------------------------------------
 "  GUI
 " ----------------------------------------------------------------------------
-"
+
 if has("gui_running")
   set background=dark
   color ir_black
