@@ -1,0 +1,3 @@
+rvm_make_flags="-j 2"
+rvm_configure_flags="--with-readline-dir=/usr/local"
+rvm_archflags="-arch x86_64"
