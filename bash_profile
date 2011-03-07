@@ -9,8 +9,7 @@ test -z "$BASH_COMPLETION" && {
         for f in /usr/local/etc/bash_completion \
                  /usr/pkg/etc/bash_completion \
                  /opt/local/etc/bash_completion \
-                 /etc/bash_completion \
-                 `brew --prefix`/etc/bash_completion
+                 /etc/bash_completion
         do
             test -f $f && {
                 . $f
