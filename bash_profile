@@ -41,4 +41,6 @@ export PS1='\u@\h:\w$(parse_git_branch)\$ '
 export PS2="> "
 export PS4="+ "
 
+if [[ -s ~/.bash_profile.local ]] ; then source ~/.bash_profile.local ; fi
+
 . ~/.bashrc
