@@ -5,3 +5,5 @@
 html=.haml
 --type-add
 css=.sass,.scss
+--type-set
+coffeescript=.coffee
