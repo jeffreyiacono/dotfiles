@@ -49,7 +49,7 @@ export NODE_PATH="/usr/local/lib/node"
 
 alias ll="ls -l"
 
-if which -s hub ; then alias git=hub ; fi
+if which hub >/dev/null ; then alias git=hub ; fi
 
 if [[ -s ~/.bashrc.local ]] ; then source ~/.bashrc.local ; fi
 
