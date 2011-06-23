@@ -1,1 +1,2 @@
 export POW_TIMEOUT=3600000 # 1 hour (60 * 60 * 1000)
+export POW_DOMAINS=dev,local
