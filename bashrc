@@ -44,7 +44,8 @@ export PS1='\u@\h:\w$(parse_git_branch)\$ '
 export PS2="> "
 export PS4="+ "
 
-export PATH="~/bin:/usr/local/bin:/usr/local/mysql/bin:/usr/local/share/npm/bin:$PATH"
+export FLEX_HOME="/opt/flex3" # ($PATH depends on this)
+export PATH="~/bin:/usr/local/bin:/usr/local/mysql/bin:/usr/local/share/npm/bin:$FLEX_HOME/bin:$PATH"
 export NODE_PATH="/usr/local/lib/node"
 
 alias ll="ls -l"
