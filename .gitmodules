@@ -64,3 +64,6 @@
 [submodule "vim/bundle/dtd-syntax"]
 	path = vim/bundle/dtd-syntax
 	url = https://github.com/cespare/dtd.vim.git
+[submodule "vim/bundle/command-t"]
+	path = vim/bundle/command-t
+	url = git://git.wincent.com/command-t.git
