@@ -24,6 +24,17 @@ let s:on_linux = s:platform =~? "linux"
 let s:on_mac   = has('macunix') || s:platform =~? "Darwin"
 
 " ----------------------------------------------------------------------------
+" Custom filetypes
+" ----------------------------------------------------------------------------
+
+autocmd BufNewFile,BufRead *.mxml set filetype=mxml
+autocmd BufNewFile,BufRead *.as set filetype=actionscript
+
+autocmd BufNewFile,BufRead *.mxml compiler flex
+autocmd BufNewFile,BufRead *.as compiler flex
+
+
+" ----------------------------------------------------------------------------
 "  Folding
 " ----------------------------------------------------------------------------
 set nofoldenable
