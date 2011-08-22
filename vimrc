@@ -204,12 +204,6 @@ map <leader>es :sp <C-R>=expand("%:p:h") . "/" <CR>
 map <leader>ev :vsp <C-R>=expand("%:p:h") . "/" <CR>
 map <leader>et :tabe <C-R>=expand("%:p:h") . "/" <CR>
 
-" FuzzyFinder/FuzzyFinder TextMate
-let g:fuzzy_ignore="*.log"
-let g:fuzzy_matching_limit=70
-map <leader>t :FuzzyFinderTextMate<CR>
-map <leader>b :FuzzyFinderBuffer<CR>
-
 " NERD_tree drawer toggle
 map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
 
