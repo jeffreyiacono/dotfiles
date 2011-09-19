@@ -54,4 +54,4 @@ if which hub >/dev/null ; then alias git=hub ; fi
 
 if [[ -s ~/.bashrc.local ]] ; then source ~/.bashrc.local ; fi
 
-if [[ -s ~/.rvm/scripts/rvm ]] ; then source ~/.rvm/scripts/rvm ; fi
+if which rbenv >/dev/null ; then eval "$(rbenv init -)" ; fi
