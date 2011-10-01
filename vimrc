@@ -33,10 +33,10 @@ autocmd BufNewFile,BufRead *.as set filetype=actionscript
 autocmd BufNewFile,BufRead *.mxml compiler flex
 autocmd BufNewFile,BufRead *.as compiler flex
 
-
 " ----------------------------------------------------------------------------
 "  Folding
 " ----------------------------------------------------------------------------
+
 set nofoldenable
 set foldmethod=syntax
 set foldlevel=1
@@ -80,8 +80,13 @@ if has("gui_running")
   set go-=T
 
   " Default window size
-  set lines=59
-  set columns=110
+  if &lines < 59
+    set lines=59
+  endif
+
+  if &columns < 110
+    set columns=110
+  endif
 endif
 
 " ----------------------------------------------------------------------------
