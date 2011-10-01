@@ -109,6 +109,8 @@ set infercase
 set completeopt=longest,menu,menuone
 set wildignore+=*.o,*.obj,*.pyc,*.DS_STORE,*.sqlite3
 
+set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
+
 " ----------------------------------------------------------------------------
 " Visual Cues
 " ----------------------------------------------------------------------------
@@ -187,6 +189,16 @@ let mapleader=","
 " Automatically reload .vimrc after save
 autocmd! BufWritePost .vimrc source %
 nmap <leader>v :tabedit $MYVIMRC<CR>
+
+" ----------------------------------------------------------------------------
+"  Git (Fugitive)
+" ----------------------------------------------------------------------------
+
+" Auto-clean fugitive buffers
+autocmd BufReadPost fugitive://* set bufhidden=delete
+
+nnoremap <leader>gd :Gdiff<cr>
+nnoremap <leader>gD :diffoff!<cr><c-w>h:bd<cr>
 
 " ----------------------------------------------------------------------------
 "  Gist
