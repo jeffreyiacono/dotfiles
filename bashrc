@@ -32,15 +32,15 @@ export GREP_OPTIONS='--color=auto' GREP_COLOR='1;32'
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
-function parse_git_dirty {
-  [[ $(git status 2> /dev/null | tail -n1 | cut -c 1-17) != "nothing to commit" ]] && echo "*"
+export GIT_PS1_SHOWDIRTYSTATE=1
+
+# terminal columns are worth something, dammit!
+function __my_git_ps1 {
+  local g=`__git_ps1 "(%s)" | tr -d " "`
+  echo "${g:+ $g}"
 }
 
-function parse_git_branch {
-  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/\* \(.*\)/ (\1$(parse_git_dirty))/"
-}
-
-export PS1='\u@\h:\w$(parse_git_branch)\$ '
+export PS1='\u@\h:\w$(__my_git_ps1)\$ '
 export PS2="> "
 export PS4="+ "
 
