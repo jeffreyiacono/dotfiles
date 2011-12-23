@@ -73,7 +73,7 @@ if has("gui_running")
   if has("gui_macvim")
     set guifont=Menlo:h12
   else
-    set guifont=Droid\ Sans\ Mono\ 9
+    set guifont=DejaVu\ Sans\ Mono\ 9
   endif
 
   " Hide the toolbar
