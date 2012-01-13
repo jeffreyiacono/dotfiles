@@ -136,12 +136,15 @@ set tabstop=4
 set expandtab              " expand tabs to spaces
 set nosmarttab             " fuck tabs
 set formatoptions+=n       " support for numbered/bullet lists
+set formatoptions-=t       " never wrap code
 set textwidth=80           " wrap at 80 chars by default
 set virtualedit=block      " allow virtual edit in visual block ..
 
+" Wrap text sometimes
+autocmd BufRead *.{md,markdown,txt} set formatoptions+=t
+
 " Use hard tabs when absolutely necessary
-autocmd FileType make   set noexpandtab
-autocmd FileType python set noexpandtab
+autocmd FileType make set noexpandtab
 
 " Syntax highlighting
 syntax on
