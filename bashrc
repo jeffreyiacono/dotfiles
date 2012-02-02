@@ -45,6 +45,8 @@ export PS2="> "
 export PS4="+ "
 
 export FLEX_HOME="/opt/flex3" # ($PATH depends on this)
+alias fdb="rlwrap fdb" # life is better this way
+
 export PATH="~/bin:/usr/local/bin:/usr/local/mysql/bin:/usr/local/share/npm/bin:$FLEX_HOME/bin:$PATH"
 export NODE_PATH="/usr/local/lib/node"
 
