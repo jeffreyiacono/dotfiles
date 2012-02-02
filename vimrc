@@ -107,7 +107,7 @@ set wildmenu               " turn on wild menu
 set wildmode=list:longest,full
 set infercase
 set completeopt=longest,menu,menuone
-set wildignore+=*.o,*.obj,*.pyc,*.DS_STORE,*.sqlite3
+set wildignore+=*.o,*.obj,*.pyc,*.DS_STORE,*.sqlite3,vendor/bundle/**
 
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 
