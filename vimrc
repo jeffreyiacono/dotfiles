@@ -143,6 +143,12 @@ set virtualedit=block      " allow virtual edit in visual block ..
 " Wrap text sometimes
 autocmd BufRead *.{md,markdown,txt} set formatoptions+=t
 
+" Handlebars is HTML
+autocmd BufRead *.{hjs,handlebars} set ft=html
+
+" JBuilder is Ruby
+autocmd BufRead *.jbuilder set ft=ruby
+
 " Use hard tabs when absolutely necessary
 autocmd FileType make set noexpandtab
 
