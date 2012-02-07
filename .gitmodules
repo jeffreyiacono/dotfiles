@@ -64,9 +64,9 @@
 [submodule "vim/bundle/dtd-syntax"]
 	path = vim/bundle/dtd-syntax
 	url = https://github.com/cespare/dtd.vim.git
-[submodule "vim/bundle/command-t"]
-	path = vim/bundle/command-t
-	url = git://git.wincent.com/command-t.git
 [submodule "vim/bundle/vim-jade"]
 	path = vim/bundle/vim-jade
 	url = git://github.com/digitaltoad/vim-jade.git
+[submodule "vim/bundle/ctrlp"]
+	path = vim/bundle/ctrlp
+	url = git://github.com/kien/ctrlp.vim.git
