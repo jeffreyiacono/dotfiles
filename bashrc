@@ -51,6 +51,7 @@ export PATH="~/bin:/usr/local/bin:/usr/local/mysql/bin:/usr/local/share/npm/bin:
 export NODE_PATH="/usr/local/lib/node"
 
 alias ll="ls -l"
+alias grep="grep -i --mmap --color=auto"
 
 if which hub >/dev/null ; then alias git=hub ; fi
 
