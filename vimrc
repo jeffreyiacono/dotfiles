@@ -95,7 +95,7 @@ endif
 
 set ruler                  " show the cursor position all the time
 set nolazyredraw           " turn off lazy redraw
-set number                 " line numbers
+set relativenumber         " relative line numbers
 set ch=1                   " command line height
 set backspace=2            " allow backspacing over everything in insert mode
 set whichwrap+=<,>,h,l,[,] " backspace and cursor keys wrap to
@@ -149,6 +149,9 @@ autocmd BufRead *.{hjs,handlebars} set ft=html
 " JBuilder is Ruby
 autocmd BufRead *.jbuilder set ft=ruby
 
+" Stylus is Sass
+autocmd BufRead *.styl set ft=sass
+
 " Use hard tabs when absolutely necessary
 autocmd FileType make set noexpandtab
 
@@ -192,10 +195,14 @@ set wmh=0 " Allow splits to be zero-height
 let mapleader=","
 
 " ----------------------------------------------------------------------------
-"  Command-T
+"  CtrlP
 " ----------------------------------------------------------------------------
 
-nmap <leader>T :CommandTFlush<CR>
+nmap <leader>t :CtrlP<CR>
+nmap <leader>T :ClearCtrlPCache<CR>
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  'tmp$\|vendor/bundle$\|\.git$\|\.bundle$\|public/images$\|public/system$'
+  \ }
 
 " ----------------------------------------------------------------------------
 "  .vimrc editing
