@@ -1,0 +1,31 @@
+[user]
+  name = Paul Rosania
+  email = paul.rosania@gmail.com
+
+[color]
+  diff = auto
+  branch = auto
+  status = auto
+
+[alias]
+  aa = add --all
+  ap = add --patch
+  amend = commit --amend
+  s = status
+  w = whatchanged
+  d = diff
+  dc = diff --cached
+  ds = diff --stat
+  b = branch
+  l = log
+  lg = log --grep
+  ll = log -p
+  ci = commit
+  co = checkout
+  rn = revert --no-commit
+  sta = stash
+  sp = stash pop
+  sl = stash list
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+[push]
+  default = current
