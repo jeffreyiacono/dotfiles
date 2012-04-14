@@ -71,6 +71,9 @@ if has("gui_running")
   if &columns < 110
     set columns=110
   endif
+else
+  set background=dark
+  color tir_black
 endif
 
 " ----------------------------------------------------------------------------
