@@ -36,8 +36,10 @@ export GIT_PS1_SHOWDIRTYSTATE=1
 
 # terminal columns are worth something, dammit!
 function __my_git_ps1 {
-  local g=`__git_ps1 "(%s)" | tr -d " "`
-  echo "${g:+ $g}"
+  if [ "x`type -t __git_ps1`" = "xfunction" ]; then
+    local g=`__git_ps1 "(%s)" | tr -d " "`
+    echo "${g:+ $g}"
+  fi
 }
 
 export PS1='\u@\h:\w$(__my_git_ps1)\$ '
