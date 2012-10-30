@@ -33,6 +33,8 @@ autocmd BufNewFile,BufRead *.as set filetype=actionscript
 autocmd BufNewFile,BufRead *.mxml compiler flex
 autocmd BufNewFile,BufRead *.as compiler flex
 
+autocmd BufNewFile,BufRead *.pig set filetype=pig syntax=pig
+
 " ----------------------------------------------------------------------------
 "  Tabularize
 " ----------------------------------------------------------------------------
