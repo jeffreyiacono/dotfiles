@@ -42,6 +42,7 @@ export GIT_PS1_SHOWDIRTYSTATE=1
 export PS1='\u@\h:\w$(__git_ps1)\$ '
 export PS2="> "
 export PS4="+ "
+export PROMPT_DIRTRIM=2
 
 export FLEX_HOME="/opt/flex3" # ($PATH depends on this)
 alias fdb="rlwrap fdb" # life is better this way
