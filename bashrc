@@ -44,6 +44,8 @@ export PS2="> "
 export PS4="+ "
 export PROMPT_DIRTRIM=2
 
+export EDITOR=vim
+
 export FLEX_HOME="/opt/flex3" # ($PATH depends on this)
 alias fdb="rlwrap fdb" # life is better this way
 
