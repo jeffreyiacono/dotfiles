@@ -147,6 +147,9 @@ autocmd BufRead *.styl set ft=sass
 " Use hard tabs when absolutely necessary
 autocmd FileType make set noexpandtab
 
+" Use default color scheme for git commits
+autocmd FileType gitcommit colors default
+
 " Syntax highlighting
 syntax on
 
