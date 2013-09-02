@@ -76,6 +76,9 @@ if has("gui_running")
 else
   set background=dark
   color tir_black
+
+  " Highlight current line in console mode
+  set cursorline
 endif
 
 " ----------------------------------------------------------------------------
