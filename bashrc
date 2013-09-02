@@ -54,6 +54,7 @@ export OPSCODE_USER="paulrosania"
 export PATH="~/bin:/usr/local/bin:/usr/local/mysql/bin:/usr/local/share/npm/bin:$FLEX_HOME/bin:$PATH"
 export NODE_PATH="/usr/local/lib/node"
 
+alias ls="ls --color=auto"
 alias ll="ls -l"
 alias grep="grep -i --mmap --color=auto"
 alias be="bundle exec"
