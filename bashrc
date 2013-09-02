@@ -54,6 +54,7 @@ export NODE_PATH="/usr/local/lib/node"
 
 alias ll="ls -l"
 alias grep="grep -i --mmap --color=auto"
+alias be="bundle exec"
 
 if which hub >/dev/null ; then alias git=hub ; fi
 
