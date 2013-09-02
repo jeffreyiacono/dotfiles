@@ -11,6 +11,7 @@ test -z "$BASH_COMPLETION" && {
     test -n "$PS1" && test $bmajor -gt 1 && {
         # search for a bash_completion file to source
         for f in /usr/local/etc/bash_completion \
+                 /usr/local/etc/bash_completion.d/* \
                  /usr/pkg/etc/bash_completion \
                  /opt/local/etc/bash_completion \
                  /etc/bash_completion
@@ -24,6 +25,10 @@ test -z "$BASH_COMPLETION" && {
     unset bash bmajor bminor
 }
 
+if [ -f /usr/local/etc/bash_completion.d/git-prompt.sh ]; then
+  . /usr/local/etc/bash_completion.d/git-prompt.sh
+fi
+
 # override and disable tilde expansion
 _expand() { return 0; }
 __expand_tilde_by_ref() { return 0; }
@@ -34,15 +39,7 @@ export LSCOLORS=ExFxCxDxBxegedabagacad
 
 export GIT_PS1_SHOWDIRTYSTATE=1
 
-# terminal columns are worth something, dammit!
-function __my_git_ps1 {
-  if [ "x`type -t __git_ps1`" = "xfunction" ]; then
-    local g=`__git_ps1 "(%s)" | tr -d " "`
-    echo "${g:+ $g}"
-  fi
-}
-
-export PS1='\u@\h:\w$(__my_git_ps1)\$ '
+export PS1='\u@\h:\w$(__git_ps1)\$ '
 export PS2="> "
 export PS4="+ "
 
