@@ -11,21 +11,33 @@
   aa = add --all
   ap = add --patch
   amend = commit --amend
+  fix = commit --amend -C HEAD
   s = status
   w = whatchanged
   d = diff
   dc = diff --cached
   ds = diff --stat
+  dom = diff origin/master
   b = branch
   l = log
-  lg = log --grep
+  lb = log --format=oneline origin/master..
+  lg = log -i --grep
   ll = log -p
   ci = commit
   co = checkout
+  r = rebase
+  ra = rebase --abort
+  rc = rebase --continue
+  ri = rebase -i
+  rom = rebase origin/master
+  riom = rebase -i origin/master
   rn = revert --no-commit
   sta = stash
   sp = stash pop
   sl = stash list
   hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  pullff = pull --ff-only
+  mergeff = merge --ff-only
+
 [push]
   default = current
