@@ -155,6 +155,8 @@ syntax on
 
 " Highlight trailing whitespace
 set list listchars=trail:.,tab:>.
+autocmd FileType go setlocal nolist noexpandtab ts=4 sw=4 sts=0 tw=0
+autocmd FileType go autocmd BufWritePre <buffer> Fmt
 
 " Search & Replace
 set ignorecase
