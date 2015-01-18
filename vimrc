@@ -196,6 +196,7 @@ let mapleader=","
 " ----------------------------------------------------------------------------
 
 nmap <leader>f :CtrlP<CR>
+nmap <leader>r :CtrlPTag<CR>
 nmap <leader>F :ClearCtrlPCache<CR>
 nmap <leader>b :CtrlPBuffer<CR>
 let g:ctrlp_custom_ignore = {
