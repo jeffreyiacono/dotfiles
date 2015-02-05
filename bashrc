@@ -3,6 +3,20 @@
 # Paul Rosania <http://paul.rosania.org>
 
 # ----------------------------------------------------------------------
+# PLATFORM DETECTION
+# ----------------------------------------------------------------------
+
+platform='unknown'
+unamestr=`uname`
+if [[ "$unamestr" == 'Linux' ]]; then
+  platform = 'linux'
+elif [[ "$unamestr" == 'FreeBSD' ]]; then
+  platform = 'freebsd'
+elif [[ "$unamestr" == 'Darwin' ]]; then
+  platform = 'darwin'
+fi
+
+# ----------------------------------------------------------------------
 # BASH COMPLETION
 # ----------------------------------------------------------------------
 
@@ -54,7 +68,7 @@ export OPSCODE_USER="paulrosania"
 export PATH="~/bin:/usr/local/bin:/usr/local/mysql/bin:/usr/local/share/npm/bin:$FLEX_HOME/bin:$PATH"
 export NODE_PATH="/usr/local/lib/node"
 
-alias ls="ls --color=auto"
+if [[ $platform == 'linux' ]] ; then alias ls="ls --color=auto" ; fi
 alias ll="ls -l"
 alias grep="grep -i --mmap --color=auto"
 alias be="bundle exec"
