@@ -39,10 +39,6 @@ test -z "$BASH_COMPLETION" && {
     unset bash bmajor bminor
 }
 
-if [ -f /usr/local/etc/bash_completion.d/git-prompt.sh ]; then
-  . /usr/local/etc/bash_completion.d/git-prompt.sh
-fi
-
 # override and disable tilde expansion
 _expand() { return 0; }
 __expand_tilde_by_ref() { return 0; }
@@ -60,10 +56,7 @@ export PROMPT_DIRTRIM=2
 
 export EDITOR=vim
 
-export OPSCODE_USER="paulrosania"
-
-export PATH="~/bin:/usr/local/bin:/usr/local/mysql/bin:/usr/local/share/npm/bin:$FLEX_HOME/bin:$PATH"
-export NODE_PATH="/usr/local/lib/node"
+export PATH="~/bin:$PATH"
 
 if [[ $platform == 'linux' ]] ; then alias ls="ls --color=auto" ; fi
 alias ll="ls -l"
