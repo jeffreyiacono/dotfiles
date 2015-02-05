@@ -60,9 +60,6 @@ export PROMPT_DIRTRIM=2
 
 export EDITOR=vim
 
-export FLEX_HOME="/opt/flex3" # ($PATH depends on this)
-alias fdb="rlwrap fdb" # life is better this way
-
 export OPSCODE_USER="paulrosania"
 
 export PATH="~/bin:/usr/local/bin:/usr/local/mysql/bin:/usr/local/share/npm/bin:$FLEX_HOME/bin:$PATH"
