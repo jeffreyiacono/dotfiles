@@ -57,7 +57,7 @@ if has("gui_running")
   color solarized
 
   if has("gui_macvim")
-    set guifont=Menlo:h12
+    set guifont=Meslo\ LG\ S\ for\ Powerline:h12
   else
     set guifont=DejaVu\ Sans\ Mono\ 9
   endif
@@ -232,6 +232,11 @@ if s:on_mac
 elseif s:on_linux
   let g:gist_clip_command = 'xclip -selection clipboard'
 endif
+
+" ----------------------------------------------------------------------------
+"  Airline
+" ----------------------------------------------------------------------------
+let g:airline_powerline_fonts = 1
 
 " ----------------------------------------------------------------------------
 "  Relative :edit shortcuts
