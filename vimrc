@@ -54,7 +54,7 @@ endif
 
 if has("gui_running")
   set background=dark
-  color ir_black
+  color solarized
 
   if has("gui_macvim")
     set guifont=Menlo:h12
