@@ -88,3 +88,6 @@
 [submodule "vim/bundle/vim-pants"]
 	path = vim/bundle/vim-pants
 	url = https://github.com/pantsbuild/vim-pants
+[submodule "vim/bundle/thrift.vim"]
+	path = vim/bundle/thrift.vim
+	url = https://github.com/solarnz/thrift.vim
