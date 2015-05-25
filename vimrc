@@ -70,8 +70,8 @@ if has("gui_running")
     set lines=59
   endif
 
-  if &columns < 110
-    set columns=110
+  if &columns < 98
+    set columns=98
   endif
 else
   set background=dark
