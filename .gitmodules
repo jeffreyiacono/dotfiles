@@ -22,6 +22,7 @@
 [submodule "vim/bundle/vim-git"]
 	path = vim/bundle/vim-git
 	url = git://github.com/tpope/vim-git.git
+	ignore = untracked
 [submodule "vim/bundle/vim-surround"]
 	path = vim/bundle/vim-surround
 	url = git://github.com/tpope/vim-surround.git
@@ -37,6 +38,7 @@
 [submodule "vim/bundle/vim-textobj-user"]
 	path = vim/bundle/vim-textobj-user
 	url = git://github.com/kana/vim-textobj-user.git
+	ignore = untracked
 [submodule "vim/bundle/vim-textobj-rubyblock"]
 	path = vim/bundle/vim-textobj-rubyblock
 	url = git://github.com/nelstrom/vim-textobj-rubyblock.git
