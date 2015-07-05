@@ -93,3 +93,6 @@
 [submodule "vim/bundle/thrift.vim"]
 	path = vim/bundle/thrift.vim
 	url = https://github.com/solarnz/thrift.vim
+[submodule "tmux/plugins/tpm"]
+	path = tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm
