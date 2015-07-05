@@ -268,6 +268,8 @@ au Bufenter *.hs compiler ghc
 let g:haddock_browser = "open"
 let g:haddock_browser_callformat = "%s %s"
 
+" JSX uses .js extensions nowadays
+let g:jsx_ext_required = 0
 
 " ---------------------------------------------------------------------------
 "  Strip all trailing whitespace in file
