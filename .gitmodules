@@ -147,3 +147,6 @@
 [submodule "vim/bundle/vim-graphql"]
 	path = vim/bundle/vim-graphql
 	url = https://github.com/jparise/vim-graphql
+[submodule "vim/bundle/YouCompleteMe"]
+	path = vim/bundle/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe
