@@ -53,9 +53,6 @@ endif
 " ----------------------------------------------------------------------------
 
 if has("gui_running")
-  set background=dark
-  color solarized
-
   if has("gui_macvim")
     set guifont=Meslo\ LG\ S\ for\ Powerline:h12
   else
@@ -74,12 +71,25 @@ if has("gui_running")
     set columns=98
   endif
 else
-  set background=dark
-  color base16-default-dark
+  " Enable true color support
+  if has("termguicolors")
+    set termguicolors
+
+    " Set escapes manually, so they work in tmux (see ':h xterm-true-color')
+    let &t_8f = "[38;2;%lu;%lu;%lum"
+    let &t_8b = "[48;2;%lu;%lu;%lum"
+  endif
 
   " Highlight current line in console mode
   set cursorline
 endif
+
+" ----------------------------------------------------------------------------
+"  Color scheme
+" ----------------------------------------------------------------------------
+
+set background=dark
+color base16-oceanicnext
 
 " ----------------------------------------------------------------------------
 "  UI
