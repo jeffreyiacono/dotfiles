@@ -57,3 +57,5 @@
   clean = git hawser clean %f
   smudge = git hawser smudge %f
   required = true
+[grep]
+	lineNumber = true

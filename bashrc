@@ -43,7 +43,7 @@ test -z "$BASH_COMPLETION" && {
 _expand() { return 0; }
 __expand_tilde_by_ref() { return 0; }
 
-export GREP_OPTIONS='--color=auto' GREP_COLOR='1;32'
+export GREP_OPTIONS='-i -n --color=auto' GREP_COLOR='1;32'
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
@@ -60,7 +60,6 @@ export PATH="~/bin:$PATH"
 
 if [[ $platform == 'linux' ]] ; then alias ls="ls --color=auto" ; fi
 alias ll="ls -l"
-alias grep="grep -i --mmap --color=auto"
 alias be="bundle exec"
 
 if which hub >/dev/null ; then alias git=hub ; fi
