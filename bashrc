@@ -54,7 +54,14 @@ export PS2="> "
 export PS4="+ "
 export PROMPT_DIRTRIM=2
 
-export EDITOR=vim
+if command -v vim > /dev/null 2>&1; then
+  export EDITOR=vim
+
+  # if vim is available, always use it
+  alias vi=vim
+else
+  export EDITOR=vi
+fi
 
 export PATH="~/bin:$PATH"
 
