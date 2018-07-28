@@ -57,9 +57,6 @@
 [submodule "vim/bundle/webapi-vim"]
 	path = vim/pack/ptr/start/webapi-vim
 	url = git://github.com/mattn/webapi-vim.git
-[submodule "vim/bundle/vim-airline"]
-	path = vim/pack/ptr/start/vim-airline
-	url = git://github.com/bling/vim-airline.git
 [submodule "tmux/plugins/tpm"]
 	path = tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
@@ -126,3 +123,6 @@
 [submodule "vim/bundle/vim-cpp-enhanced-highlight"]
 	path = vim/pack/ptr/start/vim-cpp-enhanced-highlight
 	url = git://github.com/octol/vim-cpp-enhanced-highlight.git
+[submodule "vim/pack/ptr/start/lightline.vim"]
+	path = vim/pack/ptr/start/lightline.vim
+	url = git://github.com/itchyny/lightline.vim.git
