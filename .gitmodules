@@ -120,6 +120,6 @@
 [submodule "vim/pack/vendor/start/vim-cpp-enhanced-highlight"]
 	path = vim/pack/vendor/start/vim-cpp-enhanced-highlight
 	url = git://github.com/octol/vim-cpp-enhanced-highlight.git
-[submodule "vim/pack/ptr/start/lightline.vim"]
+[submodule "vim/pack/vendor/start/lightline.vim"]
 	path = vim/pack/vendor/start/lightline.vim
 	url = git://github.com/itchyny/lightline.vim.git
