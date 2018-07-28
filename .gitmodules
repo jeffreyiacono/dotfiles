@@ -44,7 +44,7 @@
 	url = git://github.com/vim-scripts/AutoTag.git
 [submodule "vim/pack/vendor/start/ctrlp"]
 	path = vim/pack/vendor/start/ctrlp
-	url = git://github.com/kien/ctrlp.vim.git
+	url = git://github.com/ctrlpvim/ctrlp.vim.git
 [submodule "vim/pack/vendor/start/tslime.vim"]
 	path = vim/pack/vendor/start/tslime.vim
 	url = git://github.com/jgdavey/tslime.vim
