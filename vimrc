@@ -219,7 +219,7 @@ let g:ctrlp_custom_ignore = {
 
 " Automatically reload .vimrc after save
 autocmd! BufWritePost .vimrc source %
-nmap <leader>v :tabedit $MYVIMRC<CR>
+nmap <leader>v :e $MYVIMRC<CR>
 
 " ----------------------------------------------------------------------------
 "  Git (Fugitive)
