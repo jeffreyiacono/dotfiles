@@ -141,12 +141,6 @@ autocmd BufRead *.{md,markdown,txt} set formatoptions+=t
 " Handlebars is HTML
 autocmd BufRead *.{hjs,handlebars} set ft=html
 
-" JBuilder is Ruby
-autocmd BufRead *.jbuilder set ft=ruby
-
-" Stylus is Sass
-autocmd BufRead *.styl set ft=sass
-
 " Use hard tabs when absolutely necessary
 autocmd FileType make set noexpandtab
 
