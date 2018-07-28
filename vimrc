@@ -191,7 +191,7 @@ let mapleader=","
 " ----------------------------------------------------------------------------
 
 let g:lightline = {
-      \ 'colorscheme': 'default',
+      \ 'colorscheme': 'base16_oceanicnext',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
