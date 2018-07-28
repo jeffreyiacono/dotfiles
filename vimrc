@@ -201,6 +201,13 @@ let g:lightline = {
       \ },
       \ }
 
+function! LightlineReload()
+  runtime autoload/lightline/colorscheme/base16.vim
+  call lightline#init()
+  call lightline#colorscheme()
+  call lightline#update()
+endfunction
+
 " ----------------------------------------------------------------------------
 "  CtrlP
 " ----------------------------------------------------------------------------
@@ -218,7 +225,7 @@ let g:ctrlp_custom_ignore = {
 " ----------------------------------------------------------------------------
 
 " Automatically reload .vimrc after save
-autocmd! BufWritePost .vimrc source %
+autocmd! BufWritePost .vimrc source % | call LightlineReload()
 nmap <leader>v :e $MYVIMRC<CR>
 
 " ----------------------------------------------------------------------------
