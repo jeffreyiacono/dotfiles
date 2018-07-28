@@ -1,5 +1,6 @@
 " General
 set nocompatible
+set hidden                            " allow unsaved background buffers
 set history=1000
 set autoread                          " reload files (no local changes only)
 set modeline                          " make sure modeline support is enabled
