@@ -57,13 +57,16 @@ if has("gui_running")
   " Hide the toolbar
   set go-=T
 
+  " Hide the scrollbar
+  set go-=r
+
   " Default window size
-  if &lines < 59
-    set lines=59
+  if &lines < 50
+    set lines=50
   endif
 
-  if &columns < 98
-    set columns=98
+  if &columns < 80
+    set columns=80
   endif
 else
   " Enable true color support
