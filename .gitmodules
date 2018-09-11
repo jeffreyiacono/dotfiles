@@ -114,3 +114,6 @@
 [submodule "vim/pack/vendor/start/lightline.vim"]
 	path = vim/pack/vendor/start/lightline.vim
 	url = git://github.com/itchyny/lightline.vim.git
+[submodule "vim/pack/vendor/start/ale"]
+	path = vim/pack/vendor/start/ale
+	url = git://github.com/w0rp/ale.git
