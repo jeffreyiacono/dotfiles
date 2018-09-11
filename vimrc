@@ -49,7 +49,8 @@ endif
 
 if has("gui_running")
   if has("gui_macvim")
-    set guifont=Fira\ Code:h13
+    set guifont=Fira\ Code:h12
+    set linespace=1
   else
     set guifont=DejaVu\ Sans\ Mono\ 9
   endif
