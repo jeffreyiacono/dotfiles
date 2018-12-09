@@ -117,3 +117,6 @@
 [submodule "vim/pack/vendor/start/ale"]
 	path = vim/pack/vendor/start/ale
 	url = git://github.com/w0rp/ale.git
+[submodule "vim/pack/vendor/start/lexima.vim"]
+	path = vim/pack/vendor/start/lexima.vim
+	url = git://github.com/cohama/lexima.vim.git
