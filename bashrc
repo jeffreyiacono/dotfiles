@@ -63,7 +63,7 @@ else
   export EDITOR=vi
 fi
 
-export PATH="~/bin:$PATH"
+export PATH="$HOME/bin:$PATH"
 
 if [[ $platform == 'linux' ]] ; then alias ls="ls --color=auto" ; fi
 alias ll="ls -l"
