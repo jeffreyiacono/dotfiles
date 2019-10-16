@@ -19,7 +19,7 @@ function install {
     local dest="$HOME/.$src"
     local pretty_dest="~/.$src"
     if [ -a $dest ]; then
-      if false && [ $1 -ef $2 ] ; then
+      if [ $1 -ef $2 ] ; then
         echo "identical $pretty_dest"
       else
         if [ "$replace_all" = true ] ; then
