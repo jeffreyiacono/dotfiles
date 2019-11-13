@@ -7,6 +7,7 @@ attendeeCount = 2 and attendees anyof (sdelp@slack-corp.com, svasamsetti@slack-c
 # network pillar stuff
 summary ~ network : color=lightgreen
 summary ~ 'esc working group' : color=lightgreen
+summary ~ 'shared channels' : color=lightgreen
 
 # interviews
 summary ~ interview : color=yellow
