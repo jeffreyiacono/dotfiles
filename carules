@@ -1,0 +1,18 @@
+attendeeCount = 0 : color=flamingo # personal time
+attendeeCount = 2 : color=gray     # 1:1s
+
+# direct report 1:1s are purple
+attendeeCount = 2 and attendees anyof (sdelp@slack-corp.com, svasamsetti@slack-corp.com) : color=purple
+
+# network pillar stuff
+summary ~ network : color=lightgreen
+summary ~ 'esc working group' : color=lightgreen
+
+# interviews
+summary ~ interview : color=yellow
+
+# exec meetings
+attendees anyof (tyehoshua@slack-corp.com, stewart@slack-corp.com) : color=red
+
+# post-RTs are always yellow even when execs attend
+summary ~ 'post roundtable' : color=yellow
