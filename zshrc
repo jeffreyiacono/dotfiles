@@ -11,6 +11,12 @@ compinit -D
 # Add paths
 export PATH="$HOME/bin:$PATH"
 
+# Handy
+function mkcd () {
+  mkdir -p "$*"
+  cd "$*"
+}
+
 # Colorize terminal
 alias ls='ls -G'
 alias ll='ls -lG'
