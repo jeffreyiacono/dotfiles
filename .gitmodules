@@ -120,3 +120,6 @@
 [submodule "vim/pack/vendor/start/lexima.vim"]
 	path = vim/pack/vendor/start/lexima.vim
 	url = git://github.com/cohama/lexima.vim.git
+[submodule "vim/pack/vendor/start/vim-prettier"]
+	path = vim/pack/vendor/start/vim-prettier
+	url = https://github.com/prettier/vim-prettier
