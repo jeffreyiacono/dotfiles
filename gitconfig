@@ -59,3 +59,5 @@
   required = true
 [grep]
 	lineNumber = true
+[pull]
+	ff = only
