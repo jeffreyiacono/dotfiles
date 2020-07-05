@@ -230,11 +230,17 @@ nmap <leader>v :e $MYVIMRC<CR>
 " ----------------------------------------------------------------------------
 
 let g:ale_fixers = {
-  \ 'javascript': ['eslint', 'prettier'],
-  \ 'typescript': ['eslint', 'prettier'],
-  \ 'typescriptreact': ['eslint', 'prettier'],
+  \ 'css': ['prettier'],
+  \ 'javascript': ['prettier', 'eslint'],
+  \ 'typescript': ['prettier', 'eslint'],
+  \ 'typescriptreact': ['prettier', 'eslint'],
   \ }
 let g:ale_fix_on_save = 1
+let g:ale_sign_error = '❌'
+let g:ale_sign_warning = '⚠️'
+
+" Remove this line if you adopt another completion plugin, like Deoplete
+let g:ale_completion_enabled = 1
 
 " ----------------------------------------------------------------------------
 "  Git (Fugitive)
