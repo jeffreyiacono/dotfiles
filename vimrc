@@ -242,6 +242,10 @@ let g:ale_sign_warning = '⚠️'
 " Remove this line if you adopt another completion plugin, like Deoplete
 let g:ale_completion_enabled = 1
 
+nnoremap <silent> <C-]> :ALEGoToDefinition<CR>
+nnoremap <silent> gd :ALEGoToDefinition<CR>
+nnoremap <silent> gr :ALEFindReferences -relative<CR>
+
 " ----------------------------------------------------------------------------
 "  Git (Fugitive)
 " ----------------------------------------------------------------------------
