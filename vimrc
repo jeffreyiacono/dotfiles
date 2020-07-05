@@ -234,7 +234,9 @@ nmap <leader>v :e $MYVIMRC<CR>
 " ----------------------------------------------------------------------------
 
 let g:ale_fixers = {
-  \ 'javascript': ['eslint']
+  \ 'javascript': ['eslint', 'prettier'],
+  \ 'typescript': ['eslint', 'prettier'],
+  \ 'typescriptreact': ['eslint', 'prettier'],
   \ }
 let g:ale_fix_on_save = 1
 
