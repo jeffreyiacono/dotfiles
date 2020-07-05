@@ -36,9 +36,6 @@
 [submodule "vim/pack/vendor/start/AutoTag"]
 	path = vim/pack/vendor/start/AutoTag
 	url = git://github.com/vim-scripts/AutoTag.git
-[submodule "vim/pack/vendor/start/ctrlp"]
-	path = vim/pack/vendor/start/ctrlp
-	url = git://github.com/ctrlpvim/ctrlp.vim.git
 [submodule "vim/pack/vendor/start/tslime.vim"]
 	path = vim/pack/vendor/start/tslime.vim
 	url = git://github.com/jgdavey/tslime.vim
@@ -123,3 +120,9 @@
 [submodule "vim/pack/vendor/start/vim-prettier"]
 	path = vim/pack/vendor/start/vim-prettier
 	url = https://github.com/prettier/vim-prettier
+[submodule "vim/pack/vendor/start/fzf.vim"]
+	path = vim/pack/vendor/start/fzf.vim
+	url = git://github.com/junegunn/fzf.vim.git
+[submodule "vim/pack/vendor/start/fzf"]
+	path = vim/pack/vendor/start/fzf
+	url = git://github.com/junegunn/fzf.git

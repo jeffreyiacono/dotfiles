@@ -210,16 +210,12 @@ function! LightlineReload()
 endfunction
 
 " ----------------------------------------------------------------------------
-"  CtrlP
+"  fzf.vim
 " ----------------------------------------------------------------------------
 
-nmap <leader>f :CtrlP<CR>
-nmap <leader>r :CtrlPTag<CR>
-nmap <leader>F :ClearCtrlPCache<CR>
-nmap <leader>b :CtrlPBuffer<CR>
-let g:ctrlp_custom_ignore = {
-  \ 'dir':  'tmp$\|vendor/bundle$\|\.git$\|\.bundle$\|public/images$\|public/system$\|node_modules$\|jspm_packages$\|dist$'
-  \ }
+nmap <leader>f :GFiles<CR>
+nmap <leader>r :Tags<CR>
+nmap <leader>b :Buffers<CR>
 
 " ----------------------------------------------------------------------------
 "  .vimrc editing
