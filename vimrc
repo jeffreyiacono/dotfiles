@@ -179,6 +179,7 @@ let mapleader=","
 " Help
 " ----------------------------------------------------------------------------
 
+autocmd FileType help noremap <buffer> q :helpclose<CR>
 autocmd FileType typescript nnoremap <silent><buffer> K :ALEHover<CR>
 
 " ----------------------------------------------------------------------------
