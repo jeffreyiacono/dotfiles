@@ -19,18 +19,6 @@ let s:on_linux = s:platform =~? "linux"
 let s:on_mac   = has('macunix') || s:platform =~? "Darwin"
 
 " ----------------------------------------------------------------------------
-" Custom filetypes
-" ----------------------------------------------------------------------------
-
-autocmd BufNewFile,BufRead *.mxml set filetype=mxml
-autocmd BufNewFile,BufRead *.as set filetype=actionscript
-
-autocmd BufNewFile,BufRead *.mxml compiler flex
-autocmd BufNewFile,BufRead *.as compiler flex
-
-autocmd BufNewFile,BufRead *.pig set filetype=pig syntax=pig
-
-" ----------------------------------------------------------------------------
 "  Tabularize
 " ----------------------------------------------------------------------------
 
@@ -284,14 +272,6 @@ autocmd FileType go setlocal nolist noexpandtab ts=4 sw=4 sts=0 tw=0
 "  Relative :edit shortcuts
 " ----------------------------------------------------------------------------
 
-map <leader>ew :e <C-R>=expand("%:p:h") . "/" <CR>
-map <leader>es :sp <C-R>=expand("%:p:h") . "/" <CR>
-map <leader>ev :vsp <C-R>=expand("%:p:h") . "/" <CR>
-map <leader>et :tabe <C-R>=expand("%:p:h") . "/" <CR>
-
-" NERD_tree drawer toggle
-map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
-
 " Scratch toggle (scratch.vim)
 function! ToggleScratch()
   if expand('%') == g:ScratchBufferName
@@ -309,9 +289,6 @@ au Bufenter *.hs compiler ghc
 " Configure browser for haskell_doc.vim
 let g:haddock_browser = "open"
 let g:haddock_browser_callformat = "%s %s"
-
-" JSX uses .js extensions nowadays
-let g:jsx_ext_required = 0
 
 " ---------------------------------------------------------------------------
 "  Strip all trailing whitespace in file
