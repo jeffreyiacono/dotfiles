@@ -48,9 +48,6 @@
 [submodule "tmux/plugins/tpm"]
 	path = tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
-[submodule "vim/pack/vendor/start/vim-jsx"]
-	path = vim/pack/vendor/start/vim-jsx
-	url = https://github.com/mxw/vim-jsx
 [submodule "vim/pack/vendor/start/vim-husk"]
 	path = vim/pack/vendor/start/vim-husk
 	url = https://github.com/bruno-/vim-husk
