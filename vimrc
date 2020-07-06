@@ -270,6 +270,13 @@ endif
 autocmd FileType go setlocal nolist noexpandtab ts=4 sw=4 sts=0 tw=0
 
 " ----------------------------------------------------------------------------
+"  TypeScript
+" ----------------------------------------------------------------------------
+
+autocmd FileType typescript setlocal commentstring=//\ %s
+autocmd FileType typescriptreact setlocal commentstring=//\ %s
+
+" ----------------------------------------------------------------------------
 "  Relative :edit shortcuts
 " ----------------------------------------------------------------------------
 
