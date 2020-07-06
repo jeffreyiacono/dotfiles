@@ -283,6 +283,10 @@ endfunction
 
 map <leader>s :call ToggleScratch()<CR>
 
+" ---------------------------------------------------------------------------
+"  Haskell
+" ---------------------------------------------------------------------------
+
 " use ghc functionality for haskell files
 au Bufenter *.hs compiler ghc
 
