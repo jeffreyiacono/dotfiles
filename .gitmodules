@@ -126,3 +126,6 @@
 [submodule "vim/pack/vendor/start/fzf"]
 	path = vim/pack/vendor/start/fzf
 	url = git://github.com/junegunn/fzf.git
+[submodule "vim/pack/vendor/start/eunuch.vim"]
+	path = vim/pack/vendor/start/eunuch.vim
+	url = git://github.com/tpope/vim-eunuch.git
