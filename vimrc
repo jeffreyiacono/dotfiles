@@ -242,8 +242,8 @@ nnoremap <silent> <C-]> :ALEGoToDefinition<CR>
 nnoremap <silent> gd :ALEGoToDefinition<CR>
 nnoremap <silent> gr :ALEFindReferences -relative<CR>
 nnoremap <silent> dm :ALEDetail<CR>
-nnoremap <silent> ]w <Plug>(ale_next_wrap)
-nnoremap <silent> [w <Plug>(ale_previous_wrap)
+nmap <silent> ]w <Plug>(ale_next_wrap)
+nmap <silent> [w <Plug>(ale_previous_wrap)
 
 " ----------------------------------------------------------------------------
 "  Git (Fugitive)
