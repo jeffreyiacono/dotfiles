@@ -17,10 +17,10 @@
   d = diff
   dc = diff --cached
   ds = diff --stat
-  dom = diff origin/master
+  dom = diff origin/main
   b = branch
   l = log
-  lb = log --format=oneline origin/master..
+  lb = log --format=oneline origin/main..
   lg = log -i --grep
   ll = log -p
   ci = commit
@@ -29,8 +29,8 @@
   ra = rebase --abort
   rc = rebase --continue
   ri = rebase -i
-  rom = rebase origin/master
-  riom = rebase -i origin/master
+  rom = rebase origin/main
+  riom = rebase -i origin/main
   rn = revert --no-commit
   sta = stash
   sp = stash pop
@@ -61,3 +61,5 @@
 	lineNumber = true
 [pull]
 	ff = only
+[init]
+	defaultBranch = main
