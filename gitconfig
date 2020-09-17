@@ -23,6 +23,7 @@
   lb = log --format=oneline origin/main..
   lg = log -i --grep
   ll = log -p
+  g = log --graph --oneline --all
   ci = commit
   co = checkout
   r = rebase
