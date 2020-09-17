@@ -323,7 +323,7 @@ endif
 
 " Backup
 set backupdir=~/.vim/backup
-set directory=~/.vim/swap
+set directory=~/.vim/swap//
 set backup
 
 " ---------------------------------------------------------------------------
