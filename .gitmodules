@@ -1,59 +1,12 @@
-[submodule "vim/pack/vendor/start/vim-fugitive"]
-	path = vim/pack/vendor/start/vim-fugitive
-	url = git://github.com/tpope/vim-fugitive.git
-[submodule "vim/pack/vendor/start/vim-rails"]
-	path = vim/pack/vendor/start/vim-rails
-	url = git://github.com/tpope/vim-rails.git
-[submodule "vim/pack/vendor/start/vim-ruby"]
-	path = vim/pack/vendor/start/vim-ruby
-	url = git://github.com/vim-ruby/vim-ruby.git
-[submodule "vim/pack/vendor/start/vim-markdown"]
-	path = vim/pack/vendor/start/vim-markdown
-	url = git://github.com/tpope/vim-markdown.git
-[submodule "vim/pack/vendor/start/vim-git"]
-	path = vim/pack/vendor/start/vim-git
-	url = git://github.com/tpope/vim-git.git
-	ignore = untracked
-[submodule "vim/pack/vendor/start/vim-surround"]
-	path = vim/pack/vendor/start/vim-surround
-	url = git://github.com/tpope/vim-surround.git
-[submodule "vim/pack/vendor/start/vim-javascript"]
-	path = vim/pack/vendor/start/vim-javascript
-	url = git://github.com/pangloss/vim-javascript.git
-[submodule "vim/pack/vendor/start/gist-vim"]
-	path = vim/pack/vendor/start/gist-vim
-	url = git://github.com/mattn/gist-vim
-[submodule "vim/pack/vendor/start/tabular"]
-	path = vim/pack/vendor/start/tabular
-	url = git://github.com/godlygeek/tabular.git
-[submodule "vim/pack/vendor/start/vim-textobj-user"]
-	path = vim/pack/vendor/start/vim-textobj-user
-	url = git://github.com/kana/vim-textobj-user.git
-	ignore = untracked
-[submodule "vim/pack/vendor/start/vim-textobj-rubyblock"]
-	path = vim/pack/vendor/start/vim-textobj-rubyblock
-	url = git://github.com/nelstrom/vim-textobj-rubyblock.git
 [submodule "vim/pack/vendor/start/AutoTag"]
 	path = vim/pack/vendor/start/AutoTag
 	url = git://github.com/vim-scripts/AutoTag.git
-[submodule "vim/pack/vendor/start/tslime.vim"]
-	path = vim/pack/vendor/start/tslime.vim
-	url = git://github.com/jgdavey/tslime.vim
 [submodule "vim/pack/vendor/start/vim-turbux"]
 	path = vim/pack/vendor/start/vim-turbux
 	url = git://github.com/jgdavey/vim-turbux.git
-[submodule "vim/pack/vendor/start/webapi-vim"]
-	path = vim/pack/vendor/start/webapi-vim
-	url = git://github.com/mattn/webapi-vim.git
 [submodule "tmux/plugins/tpm"]
 	path = tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
-[submodule "vim/pack/vendor/start/vim-husk"]
-	path = vim/pack/vendor/start/vim-husk
-	url = https://github.com/bruno-/vim-husk
-[submodule "vim/pack/vendor/start/base16-vim"]
-	path = vim/pack/vendor/start/base16-vim
-	url = https://github.com/chriskempson/base16-vim.git
 [submodule "tmux/plugins/tmux-continuum"]
 	path = tmux/plugins/tmux-continuum
 	url = https://github.com/tmux-plugins/tmux-continuum
@@ -75,36 +28,9 @@
 [submodule "tmux/plugins/tmux-sensible"]
 	path = tmux/plugins/tmux-sensible
 	url = https://github.com/tmux-plugins/tmux-sensible
-[submodule "vim/pack/vendor/start/vim-obsession"]
-	path = vim/pack/vendor/start/vim-obsession
-	url = https://github.com/tpope/vim-obsession.git
-[submodule "vim/pack/vendor/start/ag.vim"]
-	path = vim/pack/vendor/start/ag.vim
-	url = https://github.com/rking/ag.vim
-[submodule "vim/pack/vendor/start/vim-repeat"]
-	path = vim/pack/vendor/start/vim-repeat
-	url = https://github.com/tpope/vim-repeat
-[submodule "vim/pack/vendor/start/vim-unimpaired"]
-	path = vim/pack/vendor/start/vim-unimpaired
-	url = https://github.com/tpope/vim-unimpaired
-[submodule "vim/pack/vendor/start/vim-commentary"]
-	path = vim/pack/vendor/start/vim-commentary
-	url = https://github.com/tpope/vim-commentary
-[submodule "vim/pack/vendor/start/vim-go"]
-	path = vim/pack/vendor/start/vim-go
-	url = git://github.com/fatih/vim-go.git
-[submodule "vim/pack/vendor/start/vim-graphql"]
-	path = vim/pack/vendor/start/vim-graphql
-	url = https://github.com/jparise/vim-graphql
 [submodule "vim/pack/vendor/start/YouCompleteMe"]
 	path = vim/pack/vendor/start/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe
-[submodule "vim/pack/vendor/start/rust.vim"]
-	path = vim/pack/vendor/start/rust.vim
-	url = https://github.com/rust-lang/rust.vim.git
-[submodule "vim/pack/vendor/start/vim-cpp-enhanced-highlight"]
-	path = vim/pack/vendor/start/vim-cpp-enhanced-highlight
-	url = git://github.com/octol/vim-cpp-enhanced-highlight.git
 [submodule "vim/pack/vendor/start/lightline.vim"]
 	path = vim/pack/vendor/start/lightline.vim
 	url = git://github.com/itchyny/lightline.vim.git
@@ -132,3 +58,42 @@
 [submodule "vim/pack/vendor/start/vim-terraform"]
 	path = vim/pack/vendor/start/vim-terraform
 	url = https://github.com/hashivim/vim-terraform.git
+[submodule "vim/pack/vendor/start/surround.vim"]
+	path = vim/pack/vendor/start/surround.vim
+	url = git://github.com/tpope/vim-surround.git
+[submodule "vim/pack/vendor/start/base16-vim"]
+	path = vim/pack/vendor/start/base16-vim
+	url = git://github.com/chriskempson/base16-vim.git
+[submodule "vim/pack/vendor/start/gist.vim"]
+	path = vim/pack/vendor/start/gist.vim
+	url = git://github.com/mattn/vim-gist.git
+[submodule "vim/pack/vendor/start/husk.vim"]
+	path = vim/pack/vendor/start/husk.vim
+	url = git://github.com/vim-utils/vim-husk.git
+[submodule "vim/pack/vendor/start/obsession.vim"]
+	path = vim/pack/vendor/start/obsession.vim
+	url = git://github.com/tpope/vim-obsession.git
+[submodule "vim/pack/vendor/start/vim-javascript"]
+	path = vim/pack/vendor/start/vim-javascript
+	url = git://github.com/pangloss/vim-javascript.git
+[submodule "vim/pack/vendor/start/tabular"]
+	path = vim/pack/vendor/start/tabular
+	url = git://github.com/godlygeek/tabular.git
+[submodule "vim/pack/vendor/start/repeat.vim"]
+	path = vim/pack/vendor/start/repeat.vim
+	url = git://github.com/tpope/vim-repeat.git
+[submodule "vim/pack/vendor/start/commentary.vim"]
+	path = vim/pack/vendor/start/commentary.vim
+	url = git://github.com/tpope/vim-commentary.git
+[submodule "vim/pack/vendor/start/vim-go"]
+	path = vim/pack/vendor/start/vim-go
+	url = git://github.com/fatih/vim-go.git
+[submodule "vim/pack/vendor/start/rust.vim"]
+	path = vim/pack/vendor/start/rust.vim
+	url = git://github.com/rust-lang/rust.vim.git
+[submodule "vim/pack/vendor/start/vim-graphql"]
+	path = vim/pack/vendor/start/vim-graphql
+	url = git://github.com/jparise/vim-graphql.git
+[submodule "vim/pack/vendor/start/vim-cpp-enhanced-highlight"]
+	path = vim/pack/vendor/start/vim-cpp-enhanced-highlight
+	url = git://github.com/octol/vim-cpp-enhanced-highlight.git
