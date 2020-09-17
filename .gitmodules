@@ -129,3 +129,6 @@
 [submodule "vim/pack/vendor/start/unimpaired.vim"]
 	path = vim/pack/vendor/start/unimpaired.vim
 	url = git://github.com/tpope/vim-unimpaired.git
+[submodule "vim/pack/vendor/start/vim-terraform"]
+	path = vim/pack/vendor/start/vim-terraform
+	url = https://github.com/hashivim/vim-terraform.git
