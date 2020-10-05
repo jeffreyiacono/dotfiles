@@ -97,3 +97,6 @@
 [submodule "vim/pack/vendor/start/vim-cpp-enhanced-highlight"]
 	path = vim/pack/vendor/start/vim-cpp-enhanced-highlight
 	url = git://github.com/octol/vim-cpp-enhanced-highlight.git
+[submodule "vim/pack/vendor/start/vim-nearley"]
+	path = vim/pack/vendor/start/vim-nearley
+	url = git://github.com/tjvr/vim-nearley.git
