@@ -1,6 +1,4 @@
 #!/bin/bash
-#
-# Paul Rosania <http://paul.rosania.org>
 
 # ----------------------------------------------------------------------
 # PLATFORM DETECTION
