@@ -9,7 +9,7 @@ autoload -U compinit
 compinit -D
 
 # Add paths
-export PATH="$HOME/bin:$PATH"
+export PATH="$HOME/bin:$PATH:$HOME/.local/bin"
 
 # Handy
 function mkcd () {
