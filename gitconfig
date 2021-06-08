@@ -69,3 +69,7 @@
 	defaultBranch = main
 [fetch]
 	prune = true
+[commit]
+	gpgsign = true
+[tag]
+	gpgsign = true
