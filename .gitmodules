@@ -100,3 +100,6 @@
 [submodule "vim/pack/vendor/start/vim-nearley"]
 	path = vim/pack/vendor/start/vim-nearley
 	url = git://github.com/tjvr/vim-nearley.git
+[submodule "vim/pack/vendor/start/vim-prisma"]
+	path = vim/pack/vendor/start/vim-prisma
+	url = git://github.com/pantharshit00/vim-prisma.git
