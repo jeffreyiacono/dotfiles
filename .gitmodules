@@ -103,3 +103,6 @@
 [submodule "vim/pack/vendor/start/vim-prisma"]
 	path = vim/pack/vendor/start/vim-prisma
 	url = git://github.com/pantharshit00/vim-prisma.git
+[submodule "vim/pack/ptr/start/vim-solidity"]
+	path = vim/pack/ptr/start/vim-solidity
+	url = https://github.com/tomlion/vim-solidity.git
